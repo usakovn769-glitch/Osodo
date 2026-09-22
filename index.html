@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Парикмахерская Diva | Вологда</title>
+    <style>
+        /* Современный минималистичный стиль и спокойная цветовая гамма */
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #2d3436;
+            --accent-dark: #1e272e;
+            --accent-creative: #485460;
+            --card-bg: #ffffff;
+            --shadow: rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--accent-dark);
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .logo-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .logo-subtitle {
+            font-size: 1rem;
+            color: #d2dae2;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #2c3e50, #000000);
+            color: white;
+            border-radius: 16px;
+            padding: 40px 30px;
+            text-align: center;
+            margin: 20px 0 30px 0;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .hero h1 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #f1f2f6;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ffffff;
+            color: var(--accent-dark);
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 2px solid transparent;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            background-color: transparent;
+            color: white;
+            border-color: white;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            margin: 35px 0 20px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-dark);
+            border-left: 4px solid var(--accent-dark);
+            padding-left: 10px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .service-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px var(--shadow);
+            border: 1px solid #f1f2f6;
+        }
+
+        .service-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--accent-dark);
+        }
+
+        .service-card p {
+            color: #57606f;
+            font-size: 0.95rem;
+        }
+
+        .contacts-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px var(--shadow);
+            margin-bottom: 40px;
+        }
+
+        .contact-item {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        .contact-item strong {
+            color: var(--accent-dark);
+        }
+
+        .contact-link {
+            color: #0984e3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        .social-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .social-btn {
+            display: block;
+            text-align: center;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: opacity 0.2s;
+        }
+
+        .social-btn.vk-group {
+            background-color: #4a76a8;
+            color: white;
+        }
+
+        .social-btn.vk-master {
+            background-color: #5181b8;
+            color: white;
+        }
+
+        .social-btn:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.85rem;
+            color: #a4b0be;
+            background-color: var(--accent-dark);
+            margin-top: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .social-buttons {
+                grid-template-columns: 1fr;
+            }
+            .hero {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-title">DIVA</div>
+        <div class="logo-subtitle">Лаборатория красоты</div>
+    </header>
+
+    <div class="container">
+        
+        <!-- Главный баннер -->
+        <div class="hero">
+            <h1>Профессиональное окрашивание и женские стрижки в Вологде</h1>
+            <p>Создаю современные, креативные образы. Подчеркну вашу уникальность в уютной и спокойной атмосфере.</p>
+            <a href="tel:+79216809507" class="btn">Записаться на преображение</a>
+        </div>
+
+        <!-- Раздел услуг -->
+        <div class="section-title">Что я предлагаю для вас</div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Рельефное окрашивание & Блонд</h3>
+                <p>Сложные техники (Airtouch, балаяж, мелирование), мягкие переходы тонов, чистый тотал-блонд. Окрашивание, которое идеально отрастает без резких границ.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Яркий креатив</h3>
+                <p>Для смелых и стильных решений. Работаю с глубокими, сочными и неоновыми оттенками пигментов прямого действия без вреда для структуры волос.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Умные женские стрижки</h3>
+                <p>Текстурные каре, точная геометрия боба, легкие каскады и дерзкие пикси. Форма подбирается индивидуально под ваш тип лица и текстуру волос так, чтобы укладка занимала минимум времени.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Бережное восстановление</h3>
+                <p>Глубокие уходовые комплексы для защиты волос во время осветления, возвращения природного блеска, плотности и эластичности локонов.</p>
+            </div>
+        </div>
+
+        <!-- Раздел контактов -->
+        <div class="section-title">Контакты и запись</div>
+        
+        <div class="contacts-card">
+            <div class="contact-item">
+                <strong>Телефон для связи:</strong> 
+                <a href="tel:+79216809507" class="contact-link">+7 (921) 680-95-07</a>
+            </div>
+            <div class="contact-item">
+                <strong>Адрес:</strong> г. Вологда, Октябрьская ул., д. 25 (Гостиница «Спасская»)
+            </div>
+            <div class="contact-item">
+                <strong>Формат работы:</strong> Спокойный, индивидуальный подход, только по предварительной записи.
+            </div>
+
+            <div class="social-buttons">
+                <a href="https://vk.ru" target="_blank" class="social-btn vk-group">Наша группа VK</a>
+                <a href="https://vk.ru" target="_blank" class="social-btn vk-master">Личная страница мастера</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Парикмахерская DIVA. Лаборатория красоты в Вологде. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
